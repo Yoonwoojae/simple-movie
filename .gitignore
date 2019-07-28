@@ -71,3 +71,8 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+
+
+// Example API Request
+// https://api.themoviedb.org/3/movie/550?api_key=8194d89cd123f182f9a284d295afbc6d
+// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MTk0ZDg5Y2QxMjNmMTgyZjlhMjg0ZDI5NWFmYmM2ZCIsInN1YiI6IjVkM2Q1N2M2ZWRlMWIwMDAxM2VkMzk3NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pbmakTzr3soZ5QqXBamrj3BVN3QD4-EaIoB0rDTscEU
