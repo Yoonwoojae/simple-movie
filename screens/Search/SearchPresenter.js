@@ -6,6 +6,7 @@ import Layout from "../../constants/Layout";
 import Loader from "../../components/Loader";
 import Section from "../../components/Section";
 import MovieItem from "../../components/MovieItem";
+import { Text } from "react-native";
 
 const Container = styled.View`
   flex: 1;
@@ -23,6 +24,10 @@ const Input = styled.TextInput`
   border-radius: 20px;
   padding: 10px;
   text-align: center;
+`;
+
+const NoResult = styled.View`
+  align-items: center;
 `;
 
 const SearchResults = styled.ScrollView`
@@ -69,7 +74,11 @@ const SearchPresenter = ({
                     />
                   ))}
               </Section>
-            ) : null
+            ) : (
+                  <NoResult>
+                    <Section title="No Result"/>
+                  </NoResult>
+                )
           ) : null}
           {tvResults ? (
             tvResults.length > 0 ? (
